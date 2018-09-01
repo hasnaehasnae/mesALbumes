@@ -1,0 +1,17 @@
+<p>
+  voila mes informations: <br>
+    mon nom : {{ info.nom  }} <br>
+    mon prenom : {{ info.email }} <br>
+    mon age:  {{ info.age }} <br>
+</p>
+
+<h1> Les commentaires : </h1>
+
+<p  *ngIf="comments.length%0 == 0"> paire  </p>
+<p  *ngIf="comments.length%0 != 0" > impaire </p>
+<ul  >
+<li *ngFor="let  c of  comments " >   
+              {{ c.date }}
+              {{ c.message }}
+ <li>
+</ul>
